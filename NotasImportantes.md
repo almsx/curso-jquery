@@ -1,15 +1,21 @@
-Ctrl + Shift + P Windows
-Command + Shift + P OSX
+#Notas Importantes
 
+##Instalación de Package Control
 
-Install Package Control
-Liga - packageControl.io
-Seleccionar versión a usar
+Liga - http://packageControl.io
 
+##Comandos para abrir Package Control en Sublime Text
 
+>
+~~~
+Windows
 
+$ Ctrl + Shift + P Windows
+~~~
 
-github.com/almsx/curso-jquery
+>
+~~~
+OSX
 
-Tarea 
-Investigar Consola / modo desarrollo Safari
+$ Command + Shift + P Windows
+~~~
