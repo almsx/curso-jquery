@@ -7,4 +7,4 @@
 
 ## Introducción
 
-Este Git tiene toda la información del Curso de jQuery, JavaScript
+Este Git tiene toda la información del Curso de jQuery, JS.

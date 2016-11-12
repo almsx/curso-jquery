@@ -17,3 +17,6 @@ $ Ctrl + Shift + P Windows
 ~~~
 $ Command + Shift + P Windows
 ~~~
+
+##Activar Consola de desarrollador en Safari
+Liga - http://www.soydemac.com/como-activar-el-menu-de-desarrollo-en-safari/
