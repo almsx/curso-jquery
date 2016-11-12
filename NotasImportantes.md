@@ -6,13 +6,13 @@ Liga - http://packageControl.io
 
 ##Comandos para abrir Package Control en Sublime Text
 
-Windows
+##Windows
 >
 ~~~
 $ Ctrl + Shift + P Windows
 ~~~
 
-OSX
+##OSX
 >
 ~~~
 $ Command + Shift + P Windows
