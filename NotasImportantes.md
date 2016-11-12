@@ -8,4 +8,8 @@ Seleccionar versión a usar
 
 
 
+
 github.com/almsx/curso-jquery
+
+Tarea 
+Investigar Consola / modo desarrollo Safari
