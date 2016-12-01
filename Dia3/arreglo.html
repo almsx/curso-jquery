@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		function Arreglos(){
+			
+			var frutas = ["banana", "naranja", "manzana", "mango", "octubre"];
+			
+			console.log(frutas);
+
+			var obj = [{
+				"name": 'Alb',
+				"ape": 'Lue'
+			}, {
+				"name": 'David',
+				"ape": 'De la Sota'
+			}];
+
+			console.log(obj);
+
+			frutas[frutas.length] = "Limon";
+			console.log(frutas);
+
+			for (var index = 0; index < frutas.length; index += 1){
+				console.log(frutas[index]);
+			}
+
+			var cadena = frutas.toString();
+			console.log(cadena);
+
+
+			var cadena2 = frutas.join("*");
+			console.log(cadena2);
+
+			//Eliminar elemento de un arreglo
+			frutas.pop();
+			console.log(frutas);
+
+			//agregar elemeto a un arreglo
+			frutas.push("Kiwi");
+			console.log(frutas);
+
+			//Eliminar un elemento del regitro
+			frutas.shift();
+			console.log(frutas);
+
+			//Añadir al principio del arreglo un dato
+			frutas.unshift("Platano");
+			console.log(frutas);
+
+		}
+
+		Arreglos();
+	</script>
+</body>
+</html>
