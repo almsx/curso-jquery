@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Primeros pasos</title>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+	<script>
+		
+		$(document).ready(function (){
+			
+			console.log('Hola Mundo con jQuery');
+
+			//Cambiamos propiedades de un elemento
+			$('div.miDiv article p').css({
+				'background-color': '#003366',
+				'color': '#FFF'
+			});
+
+			//Asignamos un texto a esta ID
+			$('div.miDiv article p').text("hola");
+
+			//Cambiamos 3 elementos al mismo tiempo
+			//al usar sus ID por la clase
+
+			$('#text1, #text2, span').text('los 3 al mismo tiempo');
+
+
+			
+
+		});
+
+	</script>
+
+</head>
+<body>
+	
+	<div class='miDiv'>
+		<article>
+			<p id='text1'>Hola jQuery!!</p>
+		</article>
+	</div>
+	<div>
+		<article class='miDiv'>
+			<p id='text2'>Desde JS y html5</p>
+		</article>
+	</div>
+	<span></span>
+</body>
+</html>

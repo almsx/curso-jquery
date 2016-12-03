@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Primero pasos</title>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+	<script>
+		
+		$(document).ready(function (){
+			
+			console.log('Hola Mundo con jQuery');
+
+			$('#prueba').text('<p>Hola mundo</p>');
+
+			$('.prueba').html('<strong>estoy usando jquery</strong>');
+
+		});
+
+	</script>
+
+</head>
+<body>
+	
+	<div id="prueba"></div>
+
+	<div class="prueba"></div>
+
+</body>
+</html>

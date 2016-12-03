@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Primeros pasos</title>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+	<script>
+		
+		$(document).ready(function (){
+
+			console.log('jQuery - JS');
+
+			var informacion = $('.lista1');
+
+			if(informacion.length){
+				console.log('Existen ' + informacion.length )
+			} else {
+				console.log('No existe el elemento indicado');
+			}
+
+			/*Encontrar donde se encuentra un elemento extra
+			de una clase*/
+			//informacion.not('.cl1').text('Este elemento no tiene clase cl1');
+
+			/*si dentro de su cuerpo contiene informacion como 
+			un p o un span*/
+			//informacion.has('p').text('Este elemento tiene un <p> en su comentido');
+
+			/*metodo first */
+			//Al inicio
+			$('li').first().html('<strong>soy el elemento 1</strong>');
+			//Un elemento del arreglo
+			$('li').eq(2).text('soy el elemento numero 3');
+
+
+		});
+
+	</script>
+
+</head>
+<body>
+	
+	<div class="lista1 cl1">
+		<p></p>
+	</div>
+
+	<div class="lista1">
+		<span></span>
+	</div>
+
+	<ul>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+
+</body>
+</html>
