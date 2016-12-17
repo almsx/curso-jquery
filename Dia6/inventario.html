@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Inventario Coches</title>
+</head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" href="menu.css">
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+<script src="sesion.js"></script>
+
+<script src="sitio.js"></script>
+
+<body>
+
+    <div>
+    
+        <ul class="menu cf">
+            <li><a href="#" id="usuario"></a></li>
+            <li><a href="altaVehiculos.html">Añadir Coche</a></li>
+            <li><a href="logout.php">Cerrar Sesión</a></li>
+        </ul>
+
+    
+    </div>
+	
+	<table id="tablaCoches" class="table table-bordered table-hover table-striped" style="table-layout: fixed">  
+        <thead>
+        <tr>  
+            <th>ID</th>  
+            <th>IMG</th>  
+            <th>Vehiculo</th>  
+            <th>Modelo</th>  
+            <th>Placas</th>  
+            <th>Semana</th>
+            <th>Sabatino</th>
+            <th>Color</th>     
+            <th>Verificación</th>
+            <th>Editar</th> 
+            <th>Eliminar</th>       
+        </tr>
+        </thead>
+        <tbody id="datosCoche"></tbody>
+    </table> 
+
+</body>
+</html>

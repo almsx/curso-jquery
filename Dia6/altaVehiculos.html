@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Base Infor</title>
+</head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" href="estilo.css">
+<link rel="stylesheet" href="menu.css">
+
+
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+<script src="sesion.js"></script>
+
+<script src="sitio.js"></script>
+
+
+<body>
+	
+<div>
+    
+        <!--p id="usuario"></p>
+        <p><a href="logout.php">Cerrar Sesión</a-->
+        <ul class="menu cf">
+            <li><a href="#" id="usuario"></a></li>
+            <li><a href="inventario.html">Listado de Coches</a></li>
+            <li><a href="logout.php">Cerrar Sesión</a></li>
+        </ul>
+
+    
+    </div>
+
+	<form action="insertarCoches.php" method="POST">
+     
+    
+     <div class="container">  
+  <form id="contact" action="" method="post">
+    <h3>Alta Vehiculos</h3>
+  <fieldset>
+      <input placeHolder=" Marca " type="text" name="txtMarca" id="idTxtMarca"  required autofocus></input>
+    </fieldset>
+    <fieldset>
+      <input placeHolder=" Modelo  " type="text" name="txtModelo" id="idTxtModelo" required></input>
+    </fieldset>
+    <fieldset>
+      <input placeHolder=" Placas " type="text" name="txtPlacas" id="idTxtPlacas" required></input>
+    </fieldset>
+    
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Guardar Vehiculo</button>
+    </fieldset>
+    
+  </form>
+</div>
+
+    </form>
+
+</body>
+</html>

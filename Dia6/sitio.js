@@ -1,20 +1,66 @@
-function leerJSON(){
+function leerUsuario(){
+
+    $.ajax({
+        url: 'usuario.php',
+        type: 'GET',
+        success: function (response){
+           
+            var obj = $.parseJSON(response);
+            var user = 'Hola '+obj+'!';
+            $('#usuario').html(user);
+
+        }
+    });
+
+};
+
+leerUsuario();
+
+function eliminarVehiculo(parametros){
+
+    var uno = parametros;
+   
+    var formData = {
+        id:uno
+    };
+    
+    $.ajax({
+        url: 'eliminarVehiculo.php',
+        type: 'POST',
+        data: formData,
+        success: function (response){
+            
+            
+            var obj = $.parseJSON(response);
+            var eli = obj;
+            if(eli == 'siElimino'){
+                
+                window.location.href = "inventario.html";
+
+            }
+        
+        }
+    });
+
+
+};
+
+function leerVehiculos(){
 
     var vehiculo;
     var idVe;
 
 	$.ajax({
         
-        url:   'curso-jquery/Dia5/GenerarJSON.php',
+        url:   '../Dia5/GenerarJSON.php',
         type:  'GET',
         success:  function (response) {
             
-            console.log(response);
+            //console.log(response);
             var obj = $.parseJSON(response);
 
             var tam = obj.length;
-            console.log('mide '+tam);
-
+           
             for (var i = 0; i < tam; i++) {
             
             var coches = obj[i];
@@ -187,6 +233,8 @@ function leerJSON(){
             
             };
 
+           
+
             vehiculo +=  "<tr> \
                     <td class='td col1'>"+idVe +"</td> \
                     <td class='td col2'><img width=40px height=40px id='theImg' src='"+imgVehiculo()+"' /></td> \
@@ -197,6 +245,8 @@ function leerJSON(){
                     <td class='td col7'>"+sabatino(coches.placas) +"</td> \
                     <td class='td col8' style='background-color: "+color(coches.placas)+";'></td> \
                     <td class='td col9'>"+Verificacion(objetoVerificacion) +"</td> \
+                    <td class='td col10'><a href='editar.php?id="+idVe+"'><img width=40px height=40px id='theImg' src=editar.png></a></td> \
+                    <td class='td col11'><a href='#' onClick='eliminarVehiculo("+idVe+");'><img width=40px height=40px id='theImg' src=borrar.png></a></td> \
                     </tr>";
             
         }
@@ -211,6 +261,6 @@ function leerJSON(){
 
 };
 
-leerJSON();
+leerVehiculos();
 
 
